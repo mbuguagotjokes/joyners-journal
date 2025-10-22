@@ -1,4 +1,4 @@
-module joyners-journal
+module Joyners-Journal
 
 go 1.23
 
