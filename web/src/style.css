@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --black: #02010A;
+    --white: #FFFFFF;
+    --main: #D65780;
+    
+    --info: #256EFF;
+    --success: #3DDC97;
+    --warning: #EEC170;
+    --error: #FF495C;
+
+    --black-muted: color-mix(in srgb, var(--black) 30%, var(--white) 70%);
+    --main-muted: color-mix(in srgb, var(--main) 30%, var(--white) 70%);
+
+    --font-sans: DM Sans;
+    --font-mono: DM Mono;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    text-align: justify;
+}
+
+[disabled] {
+    cursor: not-allowed;
+} 
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--font-mono);
+}
+
+.cinfo {
+    color: var(--info);
+}
+.csuccess {
+    color: var(--success);
+}
+.cwarning {
+    color: var(--warning);
+}
+.cerror {
+    color: var(--error);
+}
+
+.binfo {
+    background-color: var(--info);
+}
+.bsuccess {
+    background-color: var(--success);
+}
+.bwarning {
+    background-color: var(--warning);
+}
+.berror {
+    background-color: var(--error);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--black);
+    transition: all .5s;
+}
+
+a:hover {
+    color: var(--main);
+}
+
+input, textarea, button {
+    font-family: var(--font-sans);
+    color: var(--black);
+    padding: .3em;
+    border-radius: 0;
+    transition: all .3s ease-in;
+}
+
+input, textarea {
+    border: 2px solid var(--black);
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--main);
+    outline: none;
+    box-shadow: 0px 0px 0px 2px var(--main-muted);
+}
+
+input, textarea {
+    font-family: var(--font-sans);
+    color: var(--black);
+    padding: .3em;
+    border-radius: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 250px;
+}
+
+button {
+    border: 0;
+    color: var(--white);
+    background-color: var(--black);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button > svg {
+    fill: var(--white);
+}
+
+.icon {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+button.transparent {
+    background-color: transparent;
+    color: var(--black);
+}
+
+button.transparent > svg {
+    fill: var(--black);
+}
+
+button.muted {
+    color: var(--black-muted);
+}
+
+button.muted > svg {
+    fill: var(--black-muted);
+}
+
+svg {
+    fill: var(--black);
+    height: 15px;
+    width: 15px;
+}
+
+button.ll {
+    background-color: transparent;
+    color: var(--black);
+    text-decoration-line: underline;
+    transition: all .2s ease-in;
+}
+
+button.ll:hover {
+    color: var(--main);
+}
+
+.waiting {
+    opacity: .5;
+}
+
+div.fe {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    gap: 12px;
+
+    width: 100%;
+    
+    margin: 12px 0;
+    padding: 0 12px;
+
+
+}
+
+div.fe > * {
+    width: 100%;
+}
+
+div.fe > * > * {
+    width: 100%;
+}
+
+div.fe > button {
+    width: fit-content;
+}
+
+span.vd {
+    width: 1px;
+    height: 100%;
+    background-color: color-mix(in srgb, var(--black) 20%, var(--white) 80%);
+}
+
+span.hd {
+    width: 100%;
+    height: 1px;
+    background-color: color-mix(in srgb, var(--black) 20%, var(--white) 80%);
+}
