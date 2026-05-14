@@ -28,7 +28,7 @@
 		"@tiptap/extension-image": "^3.23.2",
 		"@tiptap/extension-text-align": "^3.23.2",
 		"@tiptap/extensions": "^3.23.2",
-		"@tiptap/markdown": "^3.23.4",
+		"@tiptap/markdown": "^3.23.2",
 		"@tiptap/starter-kit": "^3.23.2",
 		"dompurify": "^3.4.3",
 		"fflate": "^0.8.2",

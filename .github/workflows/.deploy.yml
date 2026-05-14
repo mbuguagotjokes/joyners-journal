@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: web/bun.lock  # adjust if using pnpm/yarn
+          cache-dependency-path: web/package-lock.json  # adjust if using pnpm/yarn
 
       - name: Install dependencies
         run: npm ci
