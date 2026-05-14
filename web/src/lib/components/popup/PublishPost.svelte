@@ -41,7 +41,7 @@
 <section class="publish">
     <img src={qrurl} alt="">
     
-    <span>{qrurl === "" ? "" : "Scan the QRCode or"} <a href="./p/{slug}">click this link!</a></span>
+    <span>{qrurl === "" ? "" : "Scan the QRCode or"} <a href="/p/{slug}">click this link!</a></span>
     <button
         type="button"
         onclick={async() => {

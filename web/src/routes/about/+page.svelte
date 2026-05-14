@@ -27,7 +27,7 @@
     <p>
         Well, how this website works is that you go to the home page, write what you are writing and share to anyone you would like to without needing to login anywhere. I took great inspo from <a href="http://txt.fyi" target="_blank" rel="noopener noreferrer">txt.fyi</a> 
         where the idea is almost the same but the implimentation might differ as my database is the url itself meaning that your data is not stored on any servers where the closest thing to storage is your browser's history, meaning that this page here as you see it can be
-         recreated in the editor producing the same results. <a href="./">Click me to see</a>. Though this website is crude, i will try my best 
+         recreated in the editor producing the same results. <a href="/">Click me to see</a>. Though this website is crude, i will try my best 
         to make sure that you get the best expirience possible out of this project. If there is any issue, please visit my <a href="http://mbuguaaaaaa.xyz/contact?message=i have an issue with..." target="_blank" rel="noopener noreferrer">website</a> or <a href="mailto:calvinmbuguam@gmail.com">email(most likely email)</a> and thanks again for visiting
     </p>
 </div>
