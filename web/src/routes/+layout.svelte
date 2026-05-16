@@ -1,5 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import ogImage from '$lib/assets/og-image.png';
     import Notifications from '$lib/components/Notifications.svelte';
     import Popup from '$lib/components/Popup.svelte';
 	import "../style.css"
@@ -9,6 +10,27 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<title>Joyner's Journal</title>
+	<meta property="og:type"         content="website" />
+	<meta property="og:site_name"    content="Joyner's Journal" />
+	<meta property="og:title"        content="Joyner's Journal" />
+	<meta property="og:description"  content="Share thoughts, confessions, ideas, stories, or late-night realizations completely anonymously. No accounts. No profiles. No pressure." />
+	<meta property="og:url"          content="https://journal.mbuguaaaaaa.xyz" />
+	<meta property="og:image"        content={ogImage} />
+	<meta property="og:image:width"  content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt"    content="Joyner's Journal — Anonymous thoughts, confessions, and stories." />
+	<meta property="og:locale"       content="en_US" />
+
+	<meta name="twitter:card"        content="summary_large_image" />
+	<meta name="twitter:title"       content="Joyner's Journal" />
+	<meta name="twitter:description" content="Share thoughts, confessions, ideas, stories, or late-night realizations completely anonymously. No accounts. No profiles. No pressure." />
+	<meta name="twitter:image"       content={ogImage} />
+	<meta name="twitter:image:alt"   content="Joyner's Journal — Anonymous thoughts, confessions, and stories." />
+
+	<meta name="theme-color"         content="#D65780" />
+
+	<link rel="canonical"            href="https://journal.mbuguaaaaaa.xyz" />
+	<meta name="description"         content="Share thoughts, confessions, ideas, stories, or late-night realizations completely anonymously. No accounts. No profiles. No pressure." />
 </svelte:head>
 
 <Popup />
